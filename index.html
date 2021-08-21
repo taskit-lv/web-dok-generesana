@@ -1,0 +1,375 @@
+<!doctype html>
+<html class="no-js" lang="lv-LV">
+
+<head>
+	<meta charset="utf-8">
+	<title>Noteikumu un Privātuma politikas ģenerēšana</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+		  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css?a">
+
+	<meta name="theme-color" content="#54bc00">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container" style="max-width: 800px">
+		<span class="navbar-brand">Doc generator</span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" data-page="noteikumi-paraugs" href="#">Noteikumu paraugs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-page="privatuma-politika">Privātuma politika</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="data container noteikumi-paraugs" style="margin-top: 40px; max-width: 800px">
+
+	<div class="row">
+		<div class="col-sm">
+
+			<h2>Noteikumu ģenerēšana <small style="font-size: 16px"><a href="https://makecommerce.lv/noteikumu-paraugs/?source=taskit.lv"
+											   target="_blank"
+											  rel=" nofollow noopener noreferrer">Oriģināls</a></small></h2>
+
+			<form action="/">
+
+				<div class="form-group">
+					<label for="company-name">Uzņēmuma nosaukums</label>
+					<input type="text" class="form-control" id="company-name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="reg-num">Reģistrācijas Nr.</label>
+					<input type="text" class="form-control" id="reg-num" required>
+				</div>
+
+				<div class="form-group">
+					<label for="adrese">Adrese</label>
+					<input type="text" class="form-control" id="adrese" required>
+				</div>
+
+				<div class="form-group">
+					<label for="countries">Preces tiek piegādātas uz sekojošām valstīm:</label>
+					<textarea type="text" class="form-control" id="countries" required></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="work-days">Iegādātās preces tiek nogādātas Pircēja norādītajā adresē ____-____ darba
+						dienu
+						laikā.</label>
+					<input type="text" class="form-control" id="work-days" required>
+				</div>
+
+				<div class="form-group">
+					<label for="withdrawal-email">Atteikuma tiesības epasts</label>
+					<input type="text" class="form-control" id="withdrawal-email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="complaint-email">Pircējs var iesniegt sūdzību, sazinoties ar internetveikalu, rakstot
+						uz</label>
+					<input type="text" class="form-control" id="complaint-email" required>
+				</div>
+
+
+				<div class="form-group">
+					<label for="marketing-email">Pircējam ir iespēja atteikties no mārketinga paziņojumiem, paziņojot
+						par to mums, rakstot uz</label>
+					<input type="text" class="form-control" id="marketing-email" required>
+				</div>
+
+
+				<br>
+				<button type="submit" class="btn btn-primary generate-noteikumi">Ģenerēt</button>
+				<span class="btn btn-primary save-noteikumi-html">Saglabāt html</span>
+			</form>
+
+		</div>
+	</div>
+
+</div>
+
+<div class="data container privatuma-politika" style="margin-top: 40px; max-width: 800px; display: none">
+
+	<div class="row">
+		<div class="col-sm">
+
+			<h2>Privātuma politikas ģenerēšana <small style="font-size: 16px"><a
+				href="https://makecommerce.lv/privatuma-politikas-paraugs/?source=taskit.lv" target="_blank"
+				rel="nofollow noopener noreferrer">Oriģināls</a></small></h2>
+
+			<form action="/">
+
+				<div class="form-group">
+					<label for="company-name-p">Uzņēmuma nosaukums</label>
+					<input type="text" class="form-control" id="company-name-p" required>
+				</div>
+
+				<div class="form-group">
+					<label for="reg-num-p">Reģistrācijas Nr.</label>
+					<input type="text" class="form-control" id="reg-num-p" required>
+				</div>
+
+				<div class="form-group">
+					<label for="adrese-p">Juridiska adrese</label>
+					<input type="text" class="form-control" id="adrese-p" required>
+				</div>
+
+				<div class="form-group">
+					<label for="shop-name-p">Internetveikala nosaukums</label>
+					<input type="text" class="form-control" id="shop-name-p" required>
+				</div>
+
+				<div class="form-group">
+					<label for="shop-email-p">Uzņēmuma e-pasts</label>
+					<input type="text" class="form-control" id="shop-email-p" required>
+				</div>
+
+				<div class="form-group">
+					<label for="shop-domain-p">Internetveikala domēna adrese</label>
+					<input type="text" class="form-control" id="shop-domain-p" required>
+				</div>
+
+
+				<br>
+				<button type="submit" class="btn btn-primary generate-privacy">Ģenerēt</button>
+				<span class="btn btn-primary save-privacy-html">Saglabāt html</span>
+			</form>
+
+		</div>
+	</div>
+
+</div>
+
+<div id="noteikumi-paraugs" class="data container" style="margin-top: 30px;display: none">
+	<article>
+
+		<h3>Lietošanas noteikumiem</h3>
+		<p><span id="company-name-doc"></span>, reģistrācijas Nr. <span id="reg-num-doc"></span>, adrese: <span
+			id="adrese-doc"></span>, turpmāk – internetveikals – nodrošina mājas lapā pieejamo saturu un sniedz
+			preces/pakalpojumus saskaņā ar zemāk izklāstītajiem Lietošanas noteikumiem.</p>
+		<p><strong>1. Vispārīgie noteikumi</strong></p>
+		<p>Ja patērētājs, izmantojot mājas lapas starpniecību iegādājas preces/pakalpojumus, tad šāda savstarpēja
+			vienošanās tiek uzskatīta par Distances līgumu un ir pakļauta Latvijas Republikas tiesību normām, kas regulē
+			distances līgumu tai skaitā, bet ne tikai, Latvijas Republikas „Patērētāju tiesību aizsardzības likums”,
+			Latvijas Republikas Ministru Kabineta noteikumiem „Noteikumi par distances līgumu” u.c.</p>
+		<p><strong>2. Pirkumu veikšana</strong></p>
+		<p>Interneta veikalā pārdoto produktu cenas un specifikācija ir norādītas blakus produktiem.</p>
+		<p>Lai veiktu pasūtījumu, pievienojiet vēlamos produktus iepirkumu grozam. Aizpildiet visus nepieciešamos laukus
+			un izvēlēties piemērotāko piegādes veidu. Pasūtījuma kopējās izmaksas ar piegādi pēc tam tiek parādītas uz
+			ekrāna. Veiciet pirkuma apmaksu, lai pabeigtu pasūtījumu.</p>
+		<p><strong>3. Apmaksas noteikumi</strong></p>
+		<p>Norēķinu valūta vietnē ir eiro. Pirkumu iespējams apmaksāt izvēloties sekojošas maksājumu metodes, ko
+			nodrošina maksājumu platforma makecommerce.lv , Maksekeskus AS:</p>
+		<p>Pievienojiet tās maksājumu metodes, kuras izmantos Jūsu internetveikals:</p>
+		<ul>
+			<li>Latvijas internetbanku maksājumi: Swedbank, SEB, Citadele un Luminor</li>
+			<li>Igaunijas internetbanku maksājumi: Swedbank, SEB, Luminor</li>
+			<li>Lietuvas internetbanku maksājumi: Swedbank, SEB un Luminor</li>
+			<li>Somijas internetbanku maksājumi: Aktia, Ålandsbanken, Danske, Handelsbanken, Nordea, Oma Säästopankki,
+				Pohjola, POP Pankki, S-Pankki, Säästopankki
+			</li>
+			<li>Visa/Mastercard karšu maksājumi</li>
+		</ul>
+		<p>NB! Izmantojot internetbanku apmaksas metodi, apstipriniet pasūtījumu un noklikšķiniet uz pogas “Atgriezties
+			pie tirgotāja”.</p>
+		<p>Personas dati, kas nepieciešami maksājumu veikšanai, tiek nodoti licencētai maksājumu iestādei Maksekeskus
+			AS.</p>
+		<p>Līgums stājas spēkā līdz ar veiksmīgu maksājumu uz internetveikala bankas kontu. Ja kādu iemeslu dēļ
+			pasūtījumu izpildīt nebūs iespējams, Pircējs par to tiks informēts un samaksātā summa tiks atmaksāta pēc
+			iespējas ātrāk, bet ne vēlāk kā 14 dienu laikā pēc paziņojuma saņemšanas.</p>
+		<p><strong>4. Piegādes noteikumi</strong></p>
+		<p>Preces tiek piegādātas uz sekojošām valstīm: <span id="countries-doc"></span>. Iegādātās preces tiek
+			piegādātas izmantojot: rakstiet šeit, piemēram, pakomātu partneri, kurjerpastu, paņemšana no veikala utt.
+			Visas nodevas un nodokļus, kas jāsamaksā, lai saņemtu sūtījumu piegādes galamērķī ir jāsedz Pircējam.
+			Piegādes izmaksas tiek parādītas, pirms pasūtījuma apstiprināšanas. Iegādātās preces tiek nogādātas Pircēja
+			norādītajā adresē <span id="work-days-doc"></span> darba dienu laikā. Izņēmuma gadījumos mums ir tiesības
+			nosūtīt preces līdz 45 kalendāra dienām, par to informējot klientu.</p>
+		<p><strong>5. Atteikuma tiesības</strong></p>
+		<p>Pircējam ir tiesības atteikties no preces 14 kalendāro dienu laikā no Preces saņemšanas brīža. (Atkarībā no
+			preces, pircējam var nebūt obligātas atteikuma tiesības, šādā gadījumā iemeslam ir jābūt skaidri norādītam
+			un izskaidrotam). Atteikuma tiesības nav piemērojamas, ja Pircējs ir juridiska persona.</p>
+		<p>Lai izmantotu 14 dienu atteikuma tiesības, preces drīkst izmantot tikai tām paredzētajiem mērķiem, p
+			atērētājs ir atbildīgs par preces kvalitātes un drošuma saglabāšanu atteikuma tiesību realizēšanas termiņā.
+			Ja preces tiek nepiemēroti izmantotas vai bojātas, lietošanas laikā nevērīgi izturoties pret preci vai
+			neievērojot instrukcijas norādījumus, ja ir nozaudēts preces oriģinālais iepakojums, vai, ja tās iepakojums
+			ir būtiski bojāts , internetveikalam ir tiesības samazināt atmaksājamo summu atbilstoši preces vērtības
+			samazinājumam.</p>
+		<p>Lai izmantotu atteikuma tiesības, jums jāiesniedz atteikuma veidlapu, kuru iespējams atrast šeit: (
+			ievietojiet saiti uz atteikuma veidlapu) nosūtot to uz e-pasta adresi <span
+				id="withdrawal-email-doc"></span> 14 dienu laikā pēc preču
+			saņemšanas. Ir laba prakse klientam nodrošināt preces atpakaļsūtīšanu bez papildus maksas. Tas palielinās
+			uzticību internetveikalam, kas palīdzēs uzlabot pārdošanas apjomus.</p>
+		<p>Nākamais teikums ir paredzēts tiešsaistes veikaliem, kuri nevar piedāvāt bezmaksas preces atgriešanas
+			iespēju. Pircējs sedz preces atgriešanas izmaksas, izņemot gadījumus, kad iemesls atgriešanai ir tas, ka
+			prece neatbilst pasūtījumam (piemēram, nepareizs vai bojāts produkts).</p>
+		<p>Pircēja pienākums ir bez kavēšanās, bet ne vēlāk kā 14 dienu laikā pēc atteikuma veidlapas nosūtīšanas
+			internetveikalam, atdot Pārdevējam Preces. Pēc atpakaļ nosūtīto preču saņemšanas internetveikals
+			nekavējoties, bet ne vēlāk kā 14 dienu laikā, atmaksā visus no pircēja saņemtos maksājumus pamatojoties uz
+			Distances līgumu.</p>
+		<p>Pārdevējam ir tiesības aizturēt maksājumu līdz brīdim, kamēr nav saņēmis no Pircēja Preces vai preču
+			atgriešanas apliecinājumu. Ja pircējs ir izvēlējies citu sūtīšanas veidu nekā lētāko internetveikalā
+			piedāvāto sūtījumu veidu, internetveikalam nav pienākums kompensēt pārsniegtās sūtījuma izmaksas.</p>
+		<p>Internetveikals nav atbildīgs par kavēšanos ar saistību izpildi vai to nepildīšanu, vai cita veida neizpildi,
+			kas radusies tādu apstākļu un šķēršļu dēļ, kuri ir ārpus internetveikala saprātīgas kontroles.</p>
+		<p>Internetveikals patur tiesības atteikties pārdot preces un pieprasīt preču atgriešanu no Pircēja, ja
+			internetveikalā norādītā cena ir ievērojami mazāka par tās tirgus cenu kļūdas dēļ.</p>
+		<p><strong>6. Patērētāja tiesības par līgumam neatbilstošu preci</strong></p>
+		<p>Internetveikals ir atbildīgs par Pircējam pārdoto preču neatbilstību līguma noteikumiem vai trūkumiem kas
+			radusies 6 mēnešu laikā pēc preču piegādes dienas klientam, vai bijusi piegādes brīdī, ja šāds pieņēmums nav
+			pretrunā ar lietas īpašībām vai trūkumu. Pircējam ir jāinformē Pārdevējs par preču neatbilstību
+			nekavējoties, 2 mēnešu laikā pēc tās konstatēšanas, t.i., jāiesniedz sūdzība. Pircējs var iesniegt sūdzību,
+			sazinoties ar internetveikalu, rakstot uz <span id="complaint-email-doc"></span> ( ievietojiet šeit
+			kontaktinformāciju ).</p>
+		<p>Internetveikals nav atbildīgs par defektiem, kas radušies pēc preču piegādes Pircējam. Ja iegādātajām precēm
+			ir trūkumi, par kuriem ir atbildīgs Pārdevējs, Pircējam ir tiesības pieprasīt preču trūkumu novēršanu vai
+			apmaiņu pret jaunām precēm bez maksas .</p>
+		<p>Ja preces nav iespējams labot vai nomainīt, Pārdevējs atdod Pircējam visus Distances līgumā paredzētos
+			maksājumus. Pārdevējs uz patērētāja sūdzību sniedz rakstisku atbildi 15 dienu laikā.</p>
+		<p><strong>7. Pircēja personas datu apstrāde</strong></p>
+		<p>Internetveikals apstrādā tikai tos personas datus, kurus pircējs ir ievadījis pie preču pasūtīšanas, kā
+			piemēram, vārds, uzvārds, e-pasts u.c.</p>
+		<p>Internetveikals nodod personas datus transporta pakalpojumu sniedzējam/iem, lai nodrošinātu preču
+			piegādi.</p>
+		<p>Ja Jūs esat nepārprotami piekritis saņemt mūsu mārketinga paziņojumus, tostarp jaunumus, mēs laiku pa laikam
+			varam sazināties ar Jums nosūtot informāciju par mūsu pakalpojumiem un jaunākajiem piedāvājumiem. Šajā
+			nolūkā mēs varam apstrādāt Jūsu e-pasta adresi, kuru norādījāt, pierakstoties mārketinga komunikācijai.
+			Pircējam ir iespēja atteikties no mārketinga paziņojumiem, paziņojot par to mums, rakstot uz <span
+				id="marketing-email-doc"></span>.</p>
+		<p><strong>8. Strīdu izšķiršanas kārtība</strong></p>
+		<p>Jautājumos, kas nav atrunāti šajos noteikumos un nosacījumos, Pircējs un Pārdevējs apņemas ievērot Latvijas
+			Republikā spēkā esošos normatīvos aktus.</p>
+		<p>Puses visus starp Pārdevēju un Pircēju radušos strīdus risina savstaprēju sarunu vai sarakstes ceļā. Ja
+			strīdu neizdosies atrisinās sarunu vai sarakstes veidā, Puses strīdu risinās Latvijas Republikas tiesā,
+			ievērojot LR normatīvos aktus. Strīdus starp Pircēju (patērētāju) un Pārdevēju var nodot risināšanai
+			Patērētāju tiesību aizsardzības centrā vai Latvijas Republikas tiesā.</p>
+		<p>Pircējam ir tiesības vērsties arī Eiropas Savienības strīdu izšķiršanas iestādēs.</p>
+	</article>
+</div>
+<div id="privatuma-politika" class="data container" style="margin-top: 30px;display: none">
+	<article>
+		<h3><b>Privātuma politika</b></h3>
+		<p><strong>1. Vispārīgie noteikumi.</strong></p>
+		<p>1.1. Šī Privātuma politika apraksta, kā <span id="company-name-doc-p"></span>, <span
+			id="reg-num-doc-p"></span>, <span class="adrese-doc-p"></span>
+			(turpmāk saukti arī – “Datu pārzinis”) iegūst, apstrādā un glabā personas datus, ko <span
+				id="shop-name-doc-p"></span> iegūst no saviem klientiem un personām, kas
+			apmeklē interneta mājaslapu (turpmāk saukti – “Datu subjekts” vai “Jūs”).</p>
+		<p>1.2. Personas dati ir jebkura informācija attiecībā uz identificētu vai identificējamu fizisku personu, t.
+			i., Datu subjektu. Apstrāde ir jebkura ar personas datiem saistīta darbība, piemēram, iegūšana,
+			ierakstīšana, pārveidošana, izmantošana, skatīšana, dzēšana vai iznīcināšana.</p>
+		<p>1.3. Datu pārzinis ievēro likumdošanā paredzētos datu apstrādes principus un spēj apstiprināt, ka personas
+			dati tiek apstrādāti saskaņā ar spēkā esošo likumdošanu.</p>
+		<p><strong>2. Personas datu iegūšana, apstrāde un glabāšana.</strong></p>
+		<p>2.1. Personu identificējošu informāciju Datu pārzinis iegūst, apstrādā un glabā, galvenokārt izmantojot
+			internetveikala vietni un e-pastu. <span style="color: #31ca63;">(NB! Nepieciešams papildināt, ja personas dati tiek apkopoti arī citā veidā, piemēram, papīra formā).</span>
+		</p>
+		<p>2.2. Apmeklējot un izmantojot internetveikalā sniegtos pakalpojumus, Jūs piekrītat, ka jebkura sniegtā
+			informācija tiek izmantota un pārvaldīta atbilstoši Privātuma politikā noteiktajiem mērķiem.</p>
+		<p>2.3. Datu subjekts ir atbildīgs par to, lai iesniegtie personas dati būtu pareizi, precīzi un pilnīgi.
+			Apzināta nepatiesas informācijas sniegšana tiek uzskatīta par mūsu Privātuma politikas pārkāpumu. Datu
+			subjektam ir pienākums nekavējoties paziņot Datu pārzinim par jebkurām izmaiņām iesniegtajos personas
+			datos.</p>
+		<p>2.4. Datu pārzinis nav atbildīgs par zaudējumiem, kas nodarīti Datu subjektam vai trešajām personām, ja tie
+			radušies nepatiesi iesniegtu personas datu dēļ.</p>
+		<p><strong>3. Klientu personas datu apstrāde</strong></p>
+		<p>3.1. Datu pārzinis var apstrādāt šādus personas datus:</p>
+		<p>3.1.1. Vārds, uzvārds<br>
+			3.1.2. Dzimšanas datums<br>
+			3.1.3. Kontaktinformācija (e-pasta adrese un/vai tālruņa numurs)<br>
+			3.1.4. Darījuma dati (iegādātās preces, piegādes adrese, cena, maksājuma informācija u.t.t.).<br>
+			3.1.5. Jebkuru citu informāciju, kura iesniegta mums vietnes piedāvāto pakalpojumu un preču iegādes laikā
+			vai sazinoties ar mums.</p>
+		<p><span style="color: #31ca63;">PIELĀGOJIET SARAKSTU ATBILSTOŠI TIEM PERSONAS DATIEM, KURUS APSTRĀDĀ JŪSU UZŅĒMUMS.</span>
+		</p>
+		<p>3.2. Papildus iepriekšminētajam, Datu pārzinim ir tiesības pārbaudīt iesniegto datu precizitāti, izmantojot
+			publiski pieejamos reģistrus.</p>
+		<p>3.3. Personas datu apstrādes juridiskais pamats ir Vispārīgās datu aizsardzības regulas 6.panta 1.punkta a),
+			b), c) un f) apakšpunkts:</p>
+		<p>a) datu subjekts ir devis piekrišanu savu personas datu apstrādei vienam vai vairākiem konkrētiem
+			nolūkiem;</p>
+		<p>b) apstrāde ir vajadzīga līguma, kura līgumslēdzēja puse ir datu subjekts, izpildei vai pasākumu veikšanai
+			pēc datu subjekta pieprasījuma pirms līguma noslēgšanas;</p>
+		<p>c) apstrāde ir vajadzīga, lai izpildītu uz pārzini attiecināmu juridisku pienākumu;</p>
+		<p>f) apstrāde ir vajadzīga pārziņa vai trešās personas leģitīmo interešu ievērošanai, izņemot, ja datu subjekta
+			intereses vai pamattiesības un pamatbrīvības, kurām nepieciešama personas datu aizsardzība, ir svarīgākas
+			par šādām interesēm, jo īpaši, ja datu subjekts ir bērns.</p>
+		<p>3.4. Datu pārzinis glabā un apstrādā Datu subjekta personas datus, kamēr pastāv vismaz viens no zemāk
+			norādītajiem kritērijiem:</p>
+		<p>3.4.1. Personas dati nepieciešami tiem nolūkiem, kam tie saņemti;<br>
+			3.4.2. Kamēr ārējos normatīvajos aktos noteiktajā kārtībā Datu pārzinis un/vai Datu subjekts var realizēt
+			savas leģitīmās intereses, kā piemēram, iesniegt iebildumus vai celt vai vest prasību tiesā;<br>
+			3.4.3. Kamēr pastāv juridisks pienākums datus glabāt, kā piemēram, saskaņā ar Grāmatvedības likumu;<br>
+			3.4.4. Kamēr ir spēkā Datu subjekta piekrišana attiecīgajai personas datu apstrādei, ja nepastāv cits
+			personas datu apstrādes likumīgs pamats.</p>
+		<p>Izbeidzoties šajā punktā minētajiem apstākļiem, izbeidzas arī Datu subjekta personas datu glabāšanas termiņš
+			un visi attiecīgie personas dati tiek neatgriezeniski izdzēsti no datoru sistēmām un elektroniskajiem un/vai
+			papīra dokumentiem, kas saturējuši attiecīgos personas datus vai arī šie dokumenti tiek anonimizēti.</p>
+		<p>3.5. Lai pildītu savas saistības pret Jums, Datu pārzinim ir tiesības nodot Jūsu personas datus sadarbības
+			partneriem, datu apstrādātājiem, kas veic nepieciešamo datu apstrādi mūsu uzdevumā, piemēram, grāmatvežiem,
+			kurjerdienestiem u.c. Datu apstrādātājs ir personas datu pārzinis. Maksājumu apstrādi nodrošina maksājumu
+			platforma <a href="https://makecommerce.lv">makecommerce.lv</a>, tāpēc mūsu uzņēmums maksājumu izpildei
+			nepieciešamos personas datus nodod platformas īpašniekam Maksekeskus AS.<br>
+			Pēc pieprasījuma mēs varam nodot Jūsu personas datus valsts un tiesībsargājošajām iestādēm, lai
+			nepieciešamības gadījumā aizstāvētu savas juridiskās intereses, sastādot, iesniedzot un aizstāvot juridiskas
+			prasības.</p>
+		<p>3.6. Apstrādājot un glabājot personas datus, Datu pārzinis īsteno organizatoriskos un tehniskos pasākumus,
+			lai nodrošinātu personas datu aizsardzību pret nejaušu vai nelikumīgu iznīcināšanu, mainīšanu, izpaušanu un
+			jebkādu citu nelikumīgu apstrādi.</p>
+		<p><strong>4. Datu subjekta tiesības</strong></p>
+		<p>4.1. Saskaņā ar Vispārīgo datu aizsardzības regulu un Latvijas Republikas tiesību aktiem Jums ir
+			tiesības:<br>
+			4.1.1. Piekļūt saviem personas datiem, saņemt informāciju par to apstrādi, kā arī pieprasīt Jūsu personas
+			datu kopiju elektroniskā formātā un tiesības uz šo datu nodošanu citam pārzinim (datu pārnesamība);<br>
+			4.1.2. Pieprasīt labot nepareizus, neprecīzus vai nepilnīgus personas datus;<br>
+			4.1.3. Dzēst savus personas datus (“tikt aizmirstam”), izņemot gadījumus, kad likums pieprasa saglabāt
+			datus;<br>
+			4.1.4. Atsaukt savu iepriekš sniegto piekrišanu personas datu apstrādei;<br>
+			4.1.5. Ierobežot savu datu apstrādi – tiesības pieprasīt, lai mēs īslaicīgi pavisam pārtraucam apstrādāt
+			visus Jūsu personas datus;<br>
+			4.1.6. Vērsties Datu valsts inspekcijā<br>
+			Pieprasījumu par savu tiesību īstenošanu varat iesniegt, aizpildot formu klātienē <span
+				class="adrese-doc-p"></span>, vai arī iesūtot pieprasījumu elektroniski, rakstot uz
+			klientu atbalsta dienesu <span id="shop-email-doc-p"></span>.</p>
+		<p><strong>5. Nobeiguma noteikumi</strong></p>
+		<p>5.1. Šī Privātuma politika izstrādāta saskaņā ar Eiropas Parlamenta un Padomes regulu (ES) 2016/679 (2016.
+			gada 27. aprīlis) par fizisku personu aizsardzību attiecībā uz personas datu apstrādi un šādu datu brīvu
+			apriti un ar ko atceļ Direktīvu 95/46/EK (Vispārīgā datu aizsardzības regula), kā arī Latvijas Republikas un
+			Eiropas Savienības spēkā esošajiem likumiem.</p>
+		<p>5.2. Datu pārzinim ir tiesības veikt izmaiņas vai papildinājumus Privātuma politikā jebkurā brīdī un bez
+			iepriekšēja brīdinājuma. Labojumi stājas spēkā pēc to publicēšanas mājas lapā <span
+				id="shop-domain-doc-p"></span>.</p>
+	</article>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/vendor/fileSaver.js"></script>
+<script src="js/main.js?a1.2"></script>
+
+</body>
+
+</html>
